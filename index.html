@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./museum.css?ver=1">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  <title>국립중앙박물관</title>
+</head>
+
+<body>
+  <div class="topBtn">
+    <i class="fa-solid fa-chevron-down fa-2x"></i>
+  </div>
+  <!-- 헤더(관람료 까지) -->
+  <header>
+    <div class="left-nav">
+      <ul>
+        <a href="#">
+          <li class="border_line">어린이박물관</li>
+        </a>
+        <a href="#">
+          <li class="border_line">학예사자격증</li>
+        </a>
+        <a href="#">
+          <li class="border_line">박물관신문</li>
+        </a>
+        <li class="out_li border_line">
+          소속박물관 바로가기
+          <i class="fa-solid fa-chevron-down"></i>
+          <ul class="in_ul">
+            <li class="in_li">국립경주박물관</li>
+            <li class="in_li">국립광주박물관</li>
+            <li class="in_li">국립전주박물관</li>
+            <li class="in_li">국립대구박물관</li>
+            <li class="in_li">국립부여박물관</li>
+            <li class="in_li">국립공주박물관</li>
+            <li class="in_li">국립진주박물관</li>
+            <li class="in_li">국립청주박물관</li>
+            <li class="in_li">국립김해박물관</li>
+            <li class="in_li">국립제주박물관</li>
+            <li class="in_li">국립춘천박물관</li>
+            <li class="in_li">국립나주박물관</li>
+            <li class="in_li">국립익산박물관</li>
+          </ul>
+        </li>
+        <li class="out_li border_line">Language
+          <i class="fa-solid fa-chevron-down "></i>
+          <ul class="in_ul">
+            <li class="in_li">English</li>
+            <li class="in_li">中国人</li>
+            <li class="in_li">日本</li>
+          </ul>
+        </li>
+
+        <!-- <ul class="top_list_ul">
+            <li class="top_list_li">관련사이트 바로가기
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="inner_ul">
+                <li class="inner_li">국립박물관 문화재단</li>
+                <li class="inner_li">국립중앙박물관회</li>
+                <li class="inner_li">사단법인 한국박물관협회</li>
+              </ul> -->
+        </a>
+        <ul class="icons border_line">
+          <a href="https://blog.naver.com/100museum" target="_blank">
+            <li><i class="fa-solid fa-blog fa-lg"></i></li>
+          </a>
+          <a href="https://twitter.com/The_NMK" target="_blank">
+            <li><i class="fa-brands fa-twitter fa-lg"></i></li>
+          </a>
+          <a href="https://www.facebook.com/NationalMuseumofKorea/" target="_blank">
+            <li><i class="fa-brands fa-facebook-f fa-lg"></i></li>
+          </a>
+          <a href="https://www.instagram.com/nationalmuseumofkorea/" target="_blank">
+            <li><i class="fa-brands fa-instagram fa-lg"></i></li>
+          </a>
+          <a href="https://www.youtube.com/user/koreanmuseum" target="_blank">
+            <li><i class="fa-brands fa-youtube fa-lg"></i></li>
+          </a>
+          <a href="https://audioclip.naver.com/channels/2320" target="_blank">
+            <li><i class="fa-solid fa-headset fa-lg"></i></li>
+          </a>
+        </ul>
+      </ul>
+    </div>
+    <nav>
+      <a href="#"><img src="./museum_img/logo/header_logo.png" alt="국립중앙박물관 로고" /></a>
+      <ul class="left">
+        <a href="#">
+          <li class="dropDown-w">관람 정보
+            <div class="sub-menu">
+              <ul class="under-menu">
+                <li>관람 안내</li>
+                <li>전시 해설</li>
+                <li>예약하기</li>
+                <li>관람·편의시설</li>
+                <li>오시는 길</li>
+              </ul>
+            </div>
+          </li>
+        </a>
+        <a href="#">
+          <li class="dropDown-w">전시
+            <div class="sub-menu">
+              <ul class="under-menu">
+                <li>상설 전시</li>
+                <li>특별 전시</li>
+                <li>디지털 실감 영상관</li>
+                <li>온라인 전시관</li>
+                <li>우리문화재 국외 전시</li>
+                <li>소속 국립박물관 전시</li>
+                <li>전시도록</li>
+                <li>외국박물관 소장 한국문화재</li>
+                <li>문화 행사</li>
+              </ul>
+            </div>
+          </li>
+        </a>
+        <a href="#">
+          <li>교육</li>
+        </a>
+        <a href="#">
+          <li class="dropDown-w">소장품
+            <div class="sub-menu">
+              <ul class="under-menu">
+                <li>큐레이터 추천 소장품</li>
+                <li>소장품 검색</li>
+                <li>국보·보물 검색</li>
+                <li>3D 데이터 검색</li>
+                <li>수어 동영상</li>
+                <li>소장품 열람·복제</li>
+                <li>소장품 대여 안내</li>
+                <li>문화재 기증 안내</li>
+              </ul>
+            </div>
+          </li>
+        </a>
+        <a href="#">
+          <li class="dropDown-w">학습·출판
+            <div class="sub-menu">
+              <ul class="under-menu">
+                <li>정기간 행물</li>
+                <li>고고학</li>
+                <li>역사학</li>
+                <li>미술사항</li>
+                <li>아시아학</li>
+                <li>보존과학</li>
+                <li>일제 강점기 조사 자료</li>
+                <li>도서관</li>
+                <li>기타</li>
+              </ul>
+            </div>
+          </li>
+        </a>
+        <a href="#">
+          <li class="dropDown-w">소식·참여
+            <div class="sub-menu">
+              <ul class="under-menu">
+                <li>소식</li>
+                <li>영상</li>
+                <li>자원봉사 안내</li>
+                <li>학예사 자격증 안내</li>
+                <li>전자 민원</li>
+                <li>정보공개</li>
+                <li>소식지</li>
+              </ul>
+            </div>
+          </li>
+        </a>
+        <a href="#">
+          <li class="dropDown-w">박물관 소개
+            <div class="sub-menu">
+              <ul class="under-menu">
+                <li>인사말</li>
+                <li>비전과 전략</li>
+                <li>발자취</li>
+                <li>조직 및 업무</li>
+                <li>시설 소개</li>
+                <li>수장고</li>
+                <li>박물관 관련 자료</li>
+                <li>문화유상 표준관리시스템</li>
+              </ul>
+            </div>
+          </li>
+        </a>
+      </ul>
+      <ul class="right">
+        <li class="button-login">로그인</li>
+        <li class="button-singIn">회원가입</li>
+        <li><i class="fa-solid fa-magnifying-glass fa-lg"></i></li>
+      </ul>
+    </nav>
+    <div class="carousel-wrap-wrap">
+      <div class="carousel-wrap">
+        <div class="carousel">
+          <img src="./museum_img/header_carousel/631285.jpg" alt="carousel_1" />
+          <img src="./museum_img/header_carousel/650047.jpg" alt="carousel_2" />
+          <img src="./museum_img/header_carousel/650691.jpg" alt="carousel_3" />
+          <img src="./museum_img/header_carousel/650777.png" alt="carousel_4" />
+          <img src="./museum_img/header_carousel/773161.jpg" alt="carousel_5" />
+          <img src="./museum_img/header_carousel/801459.jpg" alt="carousel_6" />
+          <img src="./museum_img/header_carousel/866367.jpg" alt="carousel_7" />
+          <img src="./museum_img/header_carousel/902528.jpg" alt="carousel_8" />
+          <img src="./museum_img/header_carousel/950997.jpg" alt="carousel_9" />
+          <img src="./museum_img/header_carousel/954313.jpg" alt="carousel_10" />
+          <img src="./museum_img/header_carousel/957605.jpg" alt="carousel_11" />
+          <img src="./museum_img/header_carousel/960934.jpg" alt="carousel_12" />
+        </div>
+      </div>
+      <button class="prev arrow">
+        <i class="fa-solid fa-angle-left fa-8x"></i> </button>
+      <button class="next arrow">
+        <i class="fa-solid fa-angle-right fa-8x"></i></button>
+      <ul class="button">
+        <li>
+          <button class="button_1 num">1</button>
+        </li>
+        <li>
+          <button class="button_2 num">2</button>
+        </li>
+        <li>
+          <button class="button_3 num">3</button>
+        </li>
+        <li>
+          <button class="button_4 num">4</button>
+        </li>
+        <li>
+          <button class="button_5 num">5</button>
+        </li>
+        <li>
+          <button class="button_6 num">6</button>
+        </li>
+        <li>
+          <button class="button_7 num">7</button>
+        </li>
+        <li>
+          <button class="button_8 num">8</button>
+        </li>
+        <li>
+          <button class="button_9 num">9</button>
+        </li>
+        <li>
+          <button class="button_10 num">10</button>
+        </li>
+        <li>
+          <button class="button_11 num">11</button>
+        </li>
+        <li>
+          <button class="button_12 num">12</button>
+        </li>
+        <li>
+          <button type="button" class="control">II</button>
+        </li>
+      </ul>
+    </div>
+    <div class="information">
+      <div class="information-innerLeft">
+        <div class="information-time">
+          <i class="fa-regular fa-clock fa-lg"></i>
+          <h2>관람시간</h2>
+          <p class="boldFont">월/화/목/금/일</p>
+          <p>10:00 ~ 18:00</p>
+          <p class="boldFont">수/토</p>
+          <p>10:00 ~ 21:00</p>
+          <p>*입장 마감은 폐관30분 전까지</p>
+        </div>
+        <div class="information-price">
+          <i class="fa-solid fa-ticket fa-lg"></i>
+          <h2>관람료</h2>
+          <p class="boldFont">무료</p>
+          <p>특별전시는 유료</p>
+        </div>
+      </div>
+      <div class="information-innerRight">
+        <ul>
+          <li>오시는길</li>
+          <li>예약하기</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- 전시 -->
+  <section>
+    <div class="exhibition">
+      <div class="carousel-top">
+        <h1>전시</h1>
+        <div>
+          <button><i class="fa-solid fa-angle-left fa-2x section_prev"></i></button>
+          <button class="play">II</button>
+          <button><i class="fa-solid fa-angle-right fa-2x section_next"></i></button>
+        </div>
+      </div>
+      <div class="carousel-wrap-ex">
+        <div class="carousel-ex">
+          <div class="carousel-item num">
+            <div class="back-img first">
+              <div>
+              </div>
+              <h3>국립중앙박물관</h3>
+            </div>
+            <span class="black-box">현재전시</span>
+            <span class="white-box">서울</span>
+            <p class="title">박물관문화 향연</p>
+            <p class="sub-title">2022-10-22 ~ 2022-10-22</p>
+          </div>
+          <div class="carousel-item num">
+            <div class="back-img second">
+              <div>
+              </div>
+              <h3>국립김해박물관</h3>
+            </div>
+            <span class="black-box">현재전시</span>
+            <span class="white-box">김해</span>
+            <p class="title">야금: 위대한 지혜</p>
+            <p class="sub-title">2022-09-30 ~ 2022-12-11</p>
+          </div>
+          <div class="carousel-item num">
+            <div class="back-img third">
+              <div>
+              </div>
+              <h3>국립광주박물관</h3>
+            </div>
+            <span class="black-box">현재전시</span>
+            <span class="white-box">광주</span>
+            <p class="title">고 이건희 회장 기증 국립광주박물관 특별전</p>
+            <p class="sub-title">2022-10-05 ~ 2023-01-29</p>
+          </div>
+          <div class="carousel-item num">
+            <div class="back-img forth">
+              <div>
+              </div>
+              <h3>국립중앙박물관</h3>
+            </div>
+            <span class="black-box">현재전시</span>
+            <span class="white-box">서울</span>
+            <p class="title">야간괴담회</p>
+            <p class="sub-title">2022-10-05 ~ 2022-10-26</p>
+          </div>
+          <div class="carousel-item num">
+            <div class="back-img fifth">
+              <div>
+              </div>
+              <h3>국립중앙박물관</h3>
+            </div>
+            <span class="black-box">현재전시</span>
+            <span class="white-box">테마전</span>
+            <p class="title">메소포타미아, 저 기록의 땅</p>
+            <p class="sub-title">2022-07-22 ~ 2024-01-28</p>
+          </div>
+          <div class="carousel-item num">
+            <div class="back-img sixth">
+              <div>
+              </div>
+              <h3>국립진주박물관</h3>
+            </div>
+            <span class="black-box">현재전시</span>
+            <span class="white-box">진주</span>
+            <p class="title">회화소록</p>
+            <p class="sub-title">2022-09-06 ~ 2022-10-30</p>
+          </div>
+          <div class="carousel-item num">
+            <div class="back-img seventh">
+              <div>
+              </div>
+              <h3>국립중앙박물관</h3>
+            </div>
+            <span class="black-box">현재전시</span>
+            <span class="white-box">특별전</span>
+            <p class="title">대한제국 첫 궁중 연회</p>
+            <p class="sub-title">2022-09-06 ~ 2022-12-25</p>
+          </div>
+          <div class="carousel-item num">
+            <div class="back-img eigth">
+              <div>
+              </div>
+              <h3>국립중앙박물관</h3>
+            </div>
+            <span class="black-box">현재전시</span>
+            <span class="white-box">테마전</span>
+            <p class="title">영원한 삶의 집, 아스타나 고분</p>
+            <p class="sub-title">2022-07-16 ~ 2023-07-15</p>
+          </div>
+          <div class="carousel-item num">
+            <div class="back-img nineth">
+              <div>
+              </div>
+              <h3>국립중앙박물관</h3>
+            </div>
+            <span class="black-box">현재전시</span>
+            <span class="white-box">테마전</span>
+            <p class="title">일본 불교조각의 세계</p>
+            <p class="sub-title">2022-04-05 ~ 2023-10-09</p>
+          </div>
+          <div class="carousel-item num">
+            <div class="back-img ten">
+              <div>
+              </div>
+              <h3>국립중앙박물관</h3>
+            </div>
+            <span class="black-box">전시종료</span>
+            <span class="white-box">특별전</span>
+            <p class="title">시대의 얼굴</p>
+            <p class="sub-title">2022-04-29 ~ 2022-08-15</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 알립니다 -->
+  <section>
+    <div class="bigNotice">
+      <div class="notice">
+        <div class="title">
+          <i class="fa-solid fa-microphone-lines fa-3x"></i>
+          <h1>알립니다</h1>
+        </div>
+        <div class="textAndImg">
+          <div class="notice_wrap">
+            <div class="notice_contentsBtn">
+              <button class="notice_btn call selected">알림</button>
+              <button class="notice_btn test">고시/공고</button>
+              <button class="notice_btn employ">채용 안내</button>
+              <button class="notice_btn news">보도자료</button>
+              <button class="notice_btn_plus">+</button>
+            </div>
+            <div class="notice_content">
+              <div class="notice_tab call">
+                <ul>
+                  <li>
+                    <div>분실물 정보안내</div>
+                    <span>2022.11.21</span>
+                  </li>
+                  <li>
+                    <div>2022년 재난대응 안전한국훈려 현장 훈련 알림</div>
+                    <span>2022.11.15</span>
+                  </li>
+                  <li>
+                    <div>분실물 정보안내</div>
+                    <span>2022.11.14</span>
+                  </li>
+                  <li>
+                    <div>분실물 정보안내</div>
+                    <span>2022.11.07</span>
+                  </li>
+                  <li>
+                    <div>국립중앙박물관 소장품 큐레이션 서비스 '아침 행복이 똑똑' 구독 안내</div>
+                    <span>2022.11.07</span>
+                  </li>
+                  <li>
+                    <div>메소포타미아실 연계 강연 개최(11/15)</div>
+                    <span>2022.11.04</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="notice_tab test hidden">
+                <ul>
+                  <li>
+                    <div>2022년 하반기 학예사 자격증 및 경력인정대상기관 심의결과</div>
+                    <span>2022.10.28</span>
+                  </li>
+                  <li>
+                    <div>2022년 국립제주박물관 한시임기제 7호(일반행정) 채용 서류전형 합격자 및 면접시험 공고</div>
+                    <span>2022.09.22</span>
+                  </li>
+                  <li>
+                    <div>2022년 하반기 박물관ㆍ미술관 학예사 자격증 및 경력인정대상기관 심사계획 공고</div>
+                    <span>2022.07.19</span>
+                  </li>
+                  <li>
+                    <div>국립공주박물관 공무직 근로자 채용 공고</div>
+                    <span>2022.07.13</span>
+                  </li>
+                  <li>
+                    <div>국립박물관 전시안내 앱 보안강화 및 클라우드 전환 사업 입찰 공고</div>
+                    <span>2022.07.01</span>
+                  </li>
+                  <li>
+                    <div>국립청주박물관 공무직근로자 (교육보조) 채용 최종 합격자 공고</div>
+                    <span>2022.05.02</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="notice_tab employ hidden">
+                <ul>
+                  <li>
+                    <div>2022년도 국립중앙박물관 시설관리과 공무직[기계, 전기(교대), 중감(교대), 안전, 조경, 미화] 근로자 채용공고</div>
+                    <span>2022.11.21</span>
+                  </li>
+                  <li>
+                    <div>국립김해박물관 공무직(보존처리) 채용 재공고</div>
+                    <span>2022.11.16</span>
+                  </li>
+                  <li>
+                    <div>국립중앙박물관 고객지원팀 공무직(응급대기실 간호사) 채용 공고</div>
+                    <span>2022.11.10</span>
+                  </li>
+                  <li>
+                    <div>2022년 국립대구박물관 공무직(사무보조 교육) 근로자 채용시험 서류전형 합격자 발표 및 면접시험 일정 공고 </div>
+                    <span>2022.11.07</span>
+                  </li>
+                  <li>
+                    <div>2023년 국립김해박물관 공무직(보존처리) 채용 공고</div>
+                    <span>2022.11.03</span>
+                  </li>
+                  <li>
+                    <div>2023년 국립김해박물관 공무직(미화) 채용 공고</div>
+                    <span>2022.11.03</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="notice_tab news hidden">
+                <ul>
+                  <li>
+                    <div>[국립부여박물관] 대한민국 국립부여박물관 · 몽골 국립칭기스칸박물관 -문화유산 공동전시 및 인적교류를 위한 업무협약(MOU)체결 </div>
+                    <span>2022.11.22</span>
+                  </li>
+                  <li>
+                    <div>[국립중앙박물관] 국립중앙박물관, 태국 방콕 국립박물관 실감콘텐츠 한국</div>
+                    <span>2022.11.22</span>
+                  </li>
+                  <li>
+                    <div>[국립경주박물관] 코로나19 이후 3년 만에 관람객 백만 명 돌파</div>
+                    <span>2022.11.22</span>
+                  </li>
+                  <li>
+                    <div>[국립중앙박물관] 국립중앙박물관, 어린이박물관 미래발전포럼 개최 </div>
+                    <span>2022.11.21</span>
+                  </li>
+                  <li>
+                    <div>[국립대구박물관] 2022 국립대구박물관 “11월 문화가 있는 날 플러스 ” 문화공연</div>
+                    <span>2022.11.21</span>
+                  </li>
+                  <li>
+                    <div>[국립김해박물관] 「가족과 함께하는 가야문화재 그리기대회」개최</div>
+                    <span>2022.11.21</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="three_carousel-wrap-wrap">
+            <div class="three_carousel-wrap">
+              <div class="three_carousel">
+                <img src="./museum_img/section_carousel/알립니다/121.png" />
+                <img src="./museum_img/section_carousel/알립니다/650792.jpg" />
+                <img src="./museum_img/section_carousel/알립니다/803701.jpg" />
+              </div>
+            </div>
+            <ul class="button">
+              <li><button class="circle firstBtn">1</button></li>
+              <li><button class="circle secondBtn">2</button></li>
+              <li><button class="circle thirdBtn">3</button></li>
+              <li><button class="squre">II</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="poster">
+        <div class="edu">
+          <p class="poster_title">교육</p>
+          <div>
+            <img src="./museum_img/section_carousel/section2_carousel/edu.png" alt='edu' />
+            <p class="summary">새로운 교육플랫폼 모두(MODU)를 만나보세요!</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event_title">
+            <p class="poster_title">행사</p>
+            <div class="event_button">
+              <span>
+                <button class="event_left">
+                  <i class="fa-solid fa-angle-left fa-lg"></i>
+                </button>
+              </span>
+              <span class="event_idx">1 / 2</span>
+              <span>
+                <button class="event_right">
+                  <i class="fa-solid fa-angle-right fa-lg"></i>
+                </button>
+              </span>
+            </div>
+          </div>
+          <div class="event_carousel_wrap">
+            <div class="event_carousel animated">
+              <div class="event_carousel_item">
+                <img src="./museum_img/section_carousel/section2_carousel/dragon.gif" />
+                <p class="summary">가족뮤지컬<드래곤 하이>
+                </p>
+                <p class="summary_date">2022-10-29 - 2022-11-27</p>
+              </div>
+              <div class="event_carousel_item">
+                <img src="./museum_img/section_carousel/section2_carousel/rose.gif" />
+                <p class="summary">힛트가요 뮤지컬<백만송이의 사랑>
+                </p>
+                <p class="summary_date">2022-10-04 - 2022-01-23</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="online">
+          <div class="online_title">
+            <p class="poster_title">온라인 전시관</p>
+            <div class="online_button">
+              <span>
+                <button class="online_left">
+                  <i class="fa-solid fa-angle-left fa-lg"></i>
+                </button>
+              </span>
+              <span class="online_idx">1 / 4</span>
+              <span>
+                <button class="online_right">
+                  <i class="fa-solid fa-angle-right fa-lg"></i>
+                </button>
+              </span>
+            </div>
+          </div>
+          <div class="online_carousel_wrap">
+            <div class="online_carousel">
+              <div class="online_carousel_item">
+                <div>
+                  <img src="./museum_img/section_carousel/online_img/11.jpg" />
+                </div>
+                <p class="summary">세계문화관 중앙아시아실 - 동서문명이 통하는 길</p>
+              </div>
+              <div class="online_carousel_item">
+                <div>
+                  <img src="./museum_img/section_carousel/online_img/22.jpg" />
+                </div>
+                <p class="summary">조선 사람들의 꿈, 평생도</p>
+              </div>
+              <div class="online_carousel_item">
+                <div>
+                  <img src="./museum_img/section_carousel/online_img/33.jpg" />
+                </div>
+                <p class="summary">어느 수집가의 초대 – 고故 이건희 회장 기증 1주년 기념전</p>
+              </div>
+              <div class="online_carousel_item">
+                <div>
+                  <img src="./museum_img/section_carousel/online_img/44.jpg" />
+                </div>
+                <p class="summary">시대의 얼굴, 셰익스피어에서 에드 시런까지</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- 푸터 -->
+  <footer>
+    <div class="top_footer">
+      <div class="nav_list">
+        <ul class="list_title">
+          <li>관람정보</li>
+          <li>관람안내</li>
+          <li>전시해설</li>
+          <li>예약하기</li>
+          <li>관람·편의시설</li>
+          <li>오시는길</li>
+        </ul>
+        <ul class="list_title">
+          <li>전시</li>
+          <li>상설전시</li>
+          <li>특별전시</li>
+          <li>디지털 실감 영상관</li>
+          <li>온라인 전시관</li>
+          <li>우리문화재 국외 전시</li>
+          <li>소속 국립박물관 전시</li>
+          <li>전시도록</li>
+          <li>외국박물관 소장 한국문화재</li>
+          <li>문화 행사</li>
+        </ul>
+        <ul class="list_title">
+          <li>교육</li>
+        </ul>
+        <ul class="list_title">
+          <li>소장품</li>
+          <li>큐레이터 추천 소장품</li>
+          <li>소장품 검색</li>
+          <li>국보·보물 검색</li>
+          <li>3D 데이터 검색</li>
+          <li>수어 동영상</li>
+          <li>소장품 열람·복제</li>
+          <li>소장품 대여 안내</li>
+          <li>문화재 기증 안내</li>
+        </ul>
+        <ul class="list_title">
+          <li>학습·출판</li>
+          <li>정기간 행물</li>
+          <li>고고학</li>
+          <li>역사학</li>
+          <li>미술사항</li>
+          <li>아시아학</li>
+          <li>보존과학</li>
+          <li>일제 강점기 조사 자료</li>
+          <li>도서관</li>
+          <li>기타</li>
+        </ul>
+        <ul class="list_title">
+          <li>소식·참여</li>
+          <li>소식</li>
+          <li>영상</li>
+          <li>자원봉사 안내</li>
+          <li>학예사 자격증 안내</li>
+          <li>전자 민원</li>
+          <li>정보공개</li>
+          <li>소식지</li>
+        </ul>
+        <ul class="list_title">
+          <li>박물관소개</li>
+          <li>인사말</li>
+          <li>비전과 전략</li>
+          <li>발자취</li>
+          <li>조직 및 업무</li>
+          <li>시설 소개</li>
+          <li>수장고</li>
+          <li>박물관 관련 자료</li>
+          <li>문화유상 표준관리시스템</li>
+        </ul>
+        <div class="link">
+          <ul>
+            <li>_어린이박물관</li>
+            <li>_교육플랫폼 모두</li>
+            <li>_학예사자격증</li>
+            <li>_e뮤지엄</li>
+            <li>_외규장각 의궤 원문</li>
+            <li>_이러닝</li>
+            <li>_박물관신문</li>
+            <li>_문화상품점</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom_footer">
+      <div class="system">
+        <ul>
+          <li>문화유산표준관리시스템</li>
+          <li>청년멘토</li>
+          <li>VCM 가상명품박물관</li>
+        </ul>
+      </div>
+      <div class="shortcut">
+        <ul class="top_list_ul">
+          <li class="top_list_li">관련사이트 바로가기
+            <i class="fa-solid fa-chevron-down"></i>
+            <ul class="inner_ul">
+              <li class="inner_li">국립박물관 문화재단</li>
+              <li class="inner_li">국립중앙박물관회</li>
+              <li class="inner_li">사단법인 한국박물관협회</li>
+            </ul>
+          </li>
+          <li class="top_list_li">소속박물관 바로가기
+            <i class="fa-solid fa-chevron-down"></i>
+            <ul class="inner_ul">
+              <li class="inner_li">국립경주박물관</li>
+              <li class="inner_li">국립광주박물관</li>
+              <li class="inner_li">국립전주박물관</li>
+              <li class="inner_li">국립대구박물관</li>
+              <li class="inner_li">국립부여박물관</li>
+              <li class="inner_li">국립공주박물관</li>
+              <li class="inner_li">국립진주박물관</li>
+              <li class="inner_li">국립청주박물관</li>
+              <li class="inner_li">국립김해박물관</li>
+              <li class="inner_li">국립제주박물관</li>
+              <li class="inner_li">국립춘천박물관</li>
+              <li class="inner_li">국립나주박물관</li>
+              <li class="inner_li">국립익산박물관</li>
+            </ul>
+          </li>
+          <li class="top_list_li">가이드북 다운로드
+            <i class="fa-solid fa-chevron-down"></i>
+            <ul class="inner_ul">
+              <li class="inner_li">한국어(PDF)</li>
+              <li class="inner_li">English(PDF)</li>
+              <li class="inner_li">中文(PDF)</li>
+              <li class="inner_li">日本語(PDF)</li>
+              <li class="inner_li">Русский(PDF)(PDF)</li>
+              <li class="inner_li">Français(PDF)</li>
+              <li class="inner_li">Deutsche(PDF)</li>
+              <li class="inner_li">Tiếng Việt(PDF)</li>
+              <li class="inner_li">Español(PDF)</li>
+              <li class="inner_li">العربية(PDF)</li>
+              <li class="inner_li">박물관 야외정원 안내</li>
+              <li class="inner_li">프로그램(11월~23년1월)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="rule">
+        <ul>
+          <li>개인정보처리방침</li>
+          <li>영상정보처리기기 운영·관리 규정</li>
+          <li>이용약관</li>
+          <li>전자민원</li>
+          <li>공공데이터개발</li>
+          <li>저작권정책</li>
+          <li>클린신고센터</li>
+          <li>찾아오시는길</li>
+        </ul>
+      </div>
+      <div class="footer_icon">
+        <ul>
+          <li><a href="https://blog.naver.com/100museum" target="_blank"></a><i class="fa-solid fa-blog fa-2x"></i></a>
+          </li>
+          <li><a href="https://twitter.com/The_NMK" target="_blank"></a><i class="fa-brands fa-twitter fa-2x"></i></a>
+          </li>
+          <li><a href="https://www.facebook.com/NationalMuseumofKorea/" target="_blank"></a><i
+              class="fa-brands fa-facebook-f fa-2x"></i></a></li>
+          <li><a href="https://www.instagram.com/nationalmuseumofkorea/" target="_blank"></a><i
+              class="fa-brands fa-instagram fa-2x"></i></a></li>
+          <li> <a href="https://www.youtube.com/user/koreanmuseum" target="_blank"></a><i
+              class="fa-brands fa-youtube fa-2x"></i></a></li>
+          <li><a href="https://audioclip.naver.com/channels/2320" target="_blank"></a><i
+              class="fa-solid fa-headset fa-2x"></i></a></li>
+        </ul>
+        <div class="address">
+          <p class="right_text">04383 서울시 용산구 서빙고로 137(용산동6가 168-6)</p>
+          <p class="right_text">대표전화 02-2077-9000</p>
+          <p class="right_text">© National Museum of Korea.</p>
+          <img src="./museum_img/footer/logo_open.png" />
+          <img src="./museum_img/footer/web_access.png" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./museum.js?ver=1"></script>
+  <script src="https://kit.fontawesome.com/8d0c4a2ebf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
