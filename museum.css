@@ -384,7 +384,6 @@ section * {
   width: 315px;
   height: 490px;
   margin-bottom: 30px;
-  /*background-image: url('./museum_img/section_carousel/1.JPG');*/
   background-size: 100% 100%;
   cursor: pointer;
   display: flex;
@@ -421,43 +420,43 @@ section * {
 }
 
 .back-img.first {
-  background-image: url('museum_img/section_carousel/1.JPG');
+  background-image: url('./museum_img/section_carousel/1.JPG');
 }
 
 .back-img.second {
-  background-image: url('museum_img/section_carousel/2.JPG');
+  background-image: url('./museum_img/section_carousel/2.jpg');
 }
 
 .back-img.third {
-  background-image: url('museum_img/section_carousel/3.jpg');
+  background-image: url('./museum_img/section_carousel/3.jpg');
 }
 
 .back-img.forth {
-  background-image: url('/museum_img/section_carousel/4.JPG');
+  background-image: url('./museum_img/section_carousel/4.jpg');
 }
 
 .back-img.fifth {
-  background-image: url('/museum_img/section_carousel/5.png');
+  background-image: url('./museum_img/section_carousel/5.png');
 }
 
 .back-img.sixth {
-  background-image: url('/museum_img/section_carousel/6.png');
+  background-image: url('./museum_img/section_carousel/6.png');
 }
 
 .back-img.seventh {
-  background-image: url('/museum_img/section_carousel/7.JPG');
+  background-image: url('./museum_img/section_carousel/7.jpg');
 }
 
 .back-img.eigth {
-  background-image: url('/museum_img/section_carousel/8.JPG');
+  background-image: url('./museum_img/section_carousel/8.jpg');
 }
 
 .back-img.nineth {
-  background-image: url('/museum_img/section_carousel/9.JPG');
+  background-image: url('./museum_img/section_carousel/9.jpg');
 }
 
 .back-img.ten {
-  background-image: url('/museum_img/section_carousel/10.JPG');
+  background-image: url('./museum_img/section_carousel/10.jpg');
 }
 
 .exhibition button {
