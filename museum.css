@@ -166,11 +166,11 @@ nav .right {
 
 .sub-menu {
   display: none;
-  width: 78.9%;
+  width: 78.85%;
   position: absolute;
   top: 115px;
   margin-top: 30px;
-  left: 10.55%;
+  left: 10.5%;
   background-color: black;
   /* border: 1px solid red */
 }
@@ -187,11 +187,7 @@ nav .right {
   /* border: 1px solid red; */
 }
 
-.left a:hover {
-  color: #800080;
-}
-
-.dropDown-w:hover .sub-menu {
+.sub-menu.show {
   display: block;
 }
 
@@ -199,6 +195,7 @@ nav .right {
   background-color: black;
   color: white;
   padding: 15px 0;
+  cursor: pointer;
 }
 
 .under-menu li:hover {

@@ -152,7 +152,7 @@ let PlayFlag = false;
 let playFlag_section = false;
 
 if (!PlayFlag) {
-  console.log("play");
+  // console.log("play");
   intervalId = setInterval(autoSlide, 4000);
 }
 
@@ -247,7 +247,7 @@ const autoSlide2 = () => {
 };
 
 if (!playFlag_section) {
-  console.log("play-section");
+  // console.log("play-section");
   section_intervalId = setInterval(autoSlide2, 3800);
 }
 
@@ -255,12 +255,10 @@ $play.addEventListener("click", () => {
   if (!playFlag_section) {
     $play.textContent = "▶";
     playFlag_section = true;
-    console.log(playFlag_section);
     clearInterval(section_intervalId);
   } else if (playFlag_section) {
     playFlag_section = false;
     $play.textContent = "II";
-    console.log(playFlag_section);
     section_intervalId = setInterval(autoSlide2, 4000);
   }
 });
@@ -306,7 +304,6 @@ const autoSlide3 = () => {
 let threeIntervalId;
 
 if (!PlayFlag) {
-  console.log("play");
   threeIntervalId = setInterval(autoSlide3, 4000);
 }
 
@@ -314,12 +311,10 @@ $three_play.addEventListener("click", () => {
   if (!playFlag_three) {
     $three_play.textContent = "▶";
     playFlag_three = true;
-    console.log(playFlag_three);
     clearInterval(threeIntervalId);
   } else if (playFlag_three) {
     playFlag_three = false;
     $three_play.textContent = "II";
-    console.log(playFlag_three);
     section_intervalId = setInterval(autoSlide3, 4000);
   }
 });
@@ -329,7 +324,6 @@ $three_carousel.style.transform = `translateX(-${
 }px)`;
 
 $first.addEventListener("click", () => {
-  console.log("1");
   three_carouselIdx = 1;
   $three_carousel.style.transform = `translateX(-${
     (three_carouselWidth + three_carouselMargin) * three_carouselIdx
@@ -383,7 +377,6 @@ function makeClone2() {
 $event_left.addEventListener("click", () => {
   if (event_carouselIdx === 1) {
     setTimeout(() => {
-      console.log("one");
       $event_carousel.classList.remove("animated");
       $event_carousel.style.transform = `translate3d(-${
         event_carouselWidth * 2
@@ -398,9 +391,6 @@ $event_left.addEventListener("click", () => {
 
   event_carouselIdx--;
 
-  console.log(event_carouselIdx);
-
-  console.log("click");
   $event_carousel.style.transform = `translate3d(-${
     event_carouselWidth * event_carouselIdx
   }px, 0, 0)`;
@@ -410,7 +400,6 @@ $event_right.addEventListener("click", () => {
   if (event_carouselIdx === 2) {
     eventIdx.textContent = `1 / 2`;
     setTimeout(() => {
-      console.log("one");
       $event_carousel.classList.remove("animated");
       $event_carousel.style.transform = `translate3d(-${
         event_carouselWidth * 1
@@ -427,9 +416,6 @@ $event_right.addEventListener("click", () => {
 
   event_carouselIdx++;
 
-  console.log(event_carouselIdx);
-
-  console.log("click");
   $event_carousel.style.transform = `translate3d(-${
     event_carouselWidth * event_carouselIdx
   }px, 0, 0)`;
@@ -473,7 +459,6 @@ function moveSlide2(num) {
     -num * online_carouselWidth
   }px)`;
   online_carouselIdx = num;
-  console.log(online_carouselIdx, online_carouselCount);
   if (
     online_carouselIdx - online_carouselCount === 4 ||
     online_carouselIdx - online_carouselCount === -4
@@ -594,14 +579,10 @@ const $notice_tab = document.querySelectorAll(".notice_tab");
 let prevTargetTab = $notice_tab[0];
 let currentTargetTab;
 
-// console.log(prevTargetEl, prevTargetTab);
-
 $notice_btn_wrap.addEventListener("click", (event) => {
   let targetEl = event.target;
-  // console.log(targetEl);
 
   if (!targetEl.classList.contains("notice_btn")) {
-    console.log("Don't area");
     return;
   }
 
@@ -615,15 +596,12 @@ $notice_btn_wrap.addEventListener("click", (event) => {
   } else if (targetEl.classList.contains("test")) {
     currentTargetTab = $notice_tab[1];
     removeAndAdd(currentTargetTab, prevTargetTab);
-    console.log("test");
   } else if (targetEl.classList.contains("employ")) {
     currentTargetTab = $notice_tab[2];
     removeAndAdd(currentTargetTab, prevTargetTab);
-    console.log("employ");
   } else {
     currentTargetTab = $notice_tab[3];
     removeAndAdd(currentTargetTab, prevTargetTab);
-    console.log("news");
   }
   targetEl.classList.add("selected");
   prevTargetEl.classList.remove("selected");
@@ -642,3 +620,78 @@ const $topBtn = document.querySelector(".topBtn");
 $topBtn.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
+
+// 네비게이션 하위 메뉴 드롭다운
+/*
+const $nav_dropDown = document.querySelector(".left");
+const $nav_subMenu = document.querySelector(".sub-menu");
+const $nav_underMenu = document.querySelector(".under-menu");
+
+let over = false;
+
+$nav_dropDown.addEventListener("mouseover", () => {
+  over = true;
+  $nav_subMenu.classList.add("show");
+});
+
+$nav_underMenu.addEventListener("mouseover", () => {
+  over = true;
+  // $nav_subMenu.classList.add("show");
+  // console.log("over");
+});
+
+$nav_subMenu.addEventListener("mouseout", () => {
+  over = false;
+  // console.log(over);
+  console.log($nav_subMenu.parentNode);
+  if (!over) {
+    setTimeout(() => {
+      console.log("remove show");
+      $nav_subMenu.classList.remove("show");
+    }, 500);
+  }
+  console.log("out");
+});
+*/
+
+const $dropDown_w = document.querySelector(".dropDown-w");
+const $sub_menu = document.querySelector(".sub-menu");
+const $under_menu = document.querySelectorAll(".under-menu");
+
+const $left = document.querySelector(".left");
+
+let prevElement = null;
+let subMenu;
+
+$left.addEventListener("mouseover", (event) => {
+  let element = event.target;
+
+  if (subMenu) {
+    subMenu.classList.remove("show");
+  }
+
+  while (!element.classList.contains("dropDown-w")) {
+    element = element.parentNode;
+
+    if (element.nodeName == "BODY") {
+      element = null;
+      return;
+    }
+  }
+  subMenu = element.children[0];
+  subMenu.classList.add("show");
+});
+
+if (!subMenu) {
+  $left.addEventListener("mouseout", () => {
+    if (subMenu) {
+      subMenu.classList.remove("show");
+    }
+  });
+}
+
+for (let i = 0; i < $under_menu.length - 1; i++) {
+  $under_menu[i].addEventListener("mouseout", () => {
+    subMenu.classList.remove("show");
+  });
+}
