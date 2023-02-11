@@ -433,31 +433,31 @@ section * {
 }
 
 .back-img.forth {
-  background-image: url('museum_img/section_carousel/4.JPG');
+  background-image: url('/museum_img/section_carousel/4.JPG');
 }
 
 .back-img.fifth {
-  background-image: url('museum_img/section_carousel/5.png');
+  background-image: url('/museum_img/section_carousel/5.png');
 }
 
 .back-img.sixth {
-  background-image: url('museum_img/section_carousel/6.png');
+  background-image: url('/museum_img/section_carousel/6.png');
 }
 
 .back-img.seventh {
-  background-image: url('museum_img/section_carousel/7.JPG');
+  background-image: url('/museum_img/section_carousel/7.JPG');
 }
 
 .back-img.eigth {
-  background-image: url('museum_img/section_carousel/8.JPG');
+  background-image: url('/museum_img/section_carousel/8.JPG');
 }
 
 .back-img.nineth {
-  background-image: url('museum_img/section_carousel/9.JPG');
+  background-image: url('/museum_img/section_carousel/9.JPG');
 }
 
 .back-img.ten {
-  background-image: url('museum_img/section_carousel/10.JPG');
+  background-image: url('/museum_img/section_carousel/10.JPG');
 }
 
 .exhibition button {
