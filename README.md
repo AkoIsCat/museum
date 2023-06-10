@@ -10,3 +10,6 @@
 ## 배포 링크
 https://nationalmuseumofkorea.netlify.app/
 
+
+
+![image](https://github.com/AkoIsCat/museum/assets/109052469/7a00dd5d-3b44-4fce-961c-9f79d691c394)
